@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "konva": "^8.3.14",
+    "mathjax": "^3.2.2"
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="node_modules/konva/konva.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="node_modules/mathjax/es5/tex-mml-chtml.js"
+    ></script>
+    <script src="node_modules/animejs/lib/anime.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="secWrapper">
+        <div id="ds"></div>
+        <div id="ruler">
+          <div class="yaxis">
+            <div class="yaWrapper">
+              <div>500</div>
+              <div>450</div>
+              <div>400</div>
+              <div>350</div>
+              <div>300</div>
+              <div>250</div>
+              <div>200</div>
+              <div>150</div>
+              <div>100</div>
+              <div>50</div>
+              <div>0</div>
+            </div>
+          </div>
+          <div class="yicon">
+            <div>&#11165;</div>
+          </div>
+          <div class="xaxis">
+            <div class="xaWrapper">
+              <div>0</div>
+              <div>50</div>
+              <div>100</div>
+              <div>150</div>
+              <div>200</div>
+              <div>250</div>
+              <div>300</div>
+              <div>350</div>
+              <div>400</div>
+              <div>450</div>
+              <div>500</div>
+            </div>
+          </div>
+          <div class="xicon">
+            <div>&#11166;</div>
+          </div>
+        </div>
+      </div>
+      <div class="control">
+        <div class="ctrlWrapper">
+          <form action="" id="form">
+            <div class="slidecontainer">
+              <input
+                type="range"
+                min="1"
+                max="499"
+                value="50"
+                class="slider"
+                id="myRange"
+              />
+              <div class="out">
+                <p>
+                  <img src="/icons/height.png" width="25px" alt="" />
+                  <span id="demo"></span>
+                </p>
+                <p>
+                  <img src="/icons/speed.png" width="25px" alt="" />
+                  <span id="vvalue">0</span>
+                </p>
+              </div>
+            </div>
+          </form>
+
+          <div class="btns">
+            <button id="start">
+              <img src="/svg/play.svg" alt="" width="30px" />
+            </button>
+            <button id="reset">
+              <img src="/svg/reset.svg" alt="" width="30px" />
+            </button>
+            <button id="howopen">
+              <img src="/svg/how.svg" alt="" width="30px" />
+            </button>
+          </div>
+        </div>
+
+        <div id="howd">
+          <p>this is how it works</p>
+          <p>$$x_{1} = v_{0}cos\theta t + x_{0}$$</p>
+          <p>$$y_{1} = -\frac{1}{2}gt^{2}+v_{0}t+y_{0}$$</p>
+          <button id="howclose">close</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
