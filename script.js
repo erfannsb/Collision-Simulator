@@ -196,11 +196,10 @@ layer.add(v9);
 
 //form here!
 
-const form = document.getElementById("form");
 const reset = document.getElementById("reset");
 var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-var vvalue = document.getElementById("vvalue");
+var output = document.getElementById("posV");
+var vvalue = document.getElementById("speedV");
 
 output.innerHTML = slider.value;
 
@@ -267,7 +266,7 @@ function getPath() {
     x: yTarget,
     y: xTarget,
     radius: 15,
-    fill: "#2b2d42",
+    fill: "#02090e",
     stroke: "#575a5e",
     strokeWidth: 2.5,
     lineJoin: "round",
@@ -309,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 //on start animation event:
-const startButton = document.getElementById("start");
+const startButton = document.getElementById("play");
 startButton.addEventListener("click", (e) => {
   e.preventDefault();
 

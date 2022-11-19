@@ -59,49 +59,49 @@
           </div>
         </div>
       </div>
-      <div class="control">
-        <div class="ctrlWrapper">
-          <form action="" id="form">
-            <div class="slidecontainer">
-              <input
-                type="range"
-                min="1"
-                max="499"
-                value="50"
-                class="slider"
-                id="myRange"
-              />
-              <div class="out">
-                <p>
-                  <img src="/icons/height.png" width="25px" alt="" />
-                  <span id="demo"></span>
-                </p>
-                <p>
-                  <img src="/icons/speed.png" width="25px" alt="" />
-                  <span id="vvalue">0</span>
-                </p>
+      <div class="thirdWrapper">
+        <div class="ctrlPanel">
+          <div class="pos">
+            <div>
+              <div clsas="imgd">
+                <img src="/svg/pos.svg" width="40px" alt="pos" />
               </div>
+              <p>Positon</p>
             </div>
-          </form>
-
-          <div class="btns">
-            <button id="start">
-              <img src="/svg/play.svg" alt="" width="30px" />
+            <p id="posValue">(250, <span id="posV">50</span>)</p>
+          </div>
+          <div class="speed">
+            <div>
+              <img src="/svg/speed.svg" width="40px" alt="speed" />
+              <p>Speed</p>
+            </div>
+            <p id="speedValue"><span id="speedV">50</span> m/s</p>
+          </div>
+          <div class="angle">
+            <div>
+              <img src="/svg/angle.svg" width="40px" alt="speed" />
+              <p>Angle</p>
+            </div>
+            <p id="speedValue">60</p>
+          </div>
+          <div class="xPos">
+            <div>
+              <img src="/svg/x.svg" width="40px" alt="speed" />
+              <p>Y</p>
+            </div>
+            <input type="range" value="50" min="1" max="499" id="myRange" />
+          </div>
+          <div class="ctrlBtns">
+            <button id="play">
+              <img src="/svg/play.svg" width="18px" alt="" />
             </button>
             <button id="reset">
-              <img src="/svg/reset.svg" alt="" width="30px" />
+              <img src="/svg/reset.svg" width="18px" alt="" />
             </button>
-            <button id="howopen">
-              <img src="/svg/how.svg" alt="" width="30px" />
+            <button id="info">
+              <img src="/svg/info.svg" width="18px" alt="" />
             </button>
           </div>
-        </div>
-
-        <div id="howd">
-          <p>this is how it works</p>
-          <p>$$x_{1} = v_{0}cos\theta t + x_{0}$$</p>
-          <p>$$y_{1} = -\frac{1}{2}gt^{2}+v_{0}t+y_{0}$$</p>
-          <button id="howclose">close</button>
         </div>
       </div>
     </div>
