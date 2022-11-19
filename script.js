@@ -289,7 +289,7 @@ slider.oninput = function () {
   }
   h = this.value;
   calV();
-  vvalue.innerHTML = v0a.toFixed(0);
+  vvalue.innerHTML = v0a.toFixed(2);
   let shape1 = stage.find("#line1")[0] || false;
   let shape15 = stage.find("#line2")[0] || false;
   let shape2 = stage.find("#target")[0] || false;

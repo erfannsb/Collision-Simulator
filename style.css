@@ -3,22 +3,6 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
-@font-face {
-  font-family: Sacramento;
-  src: url(fonts/Sacramento-Regular.ttf);
-}
-
-@font-face {
-  font-family: DS;
-  src: url(fonts/DancingScript-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: math;
-  src: url(fonts/NotoSansMath-Regular.ttf);
-}
-
 @font-face {
   font-family: inter;
   src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);

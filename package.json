@@ -3,5 +3,23 @@
     "animejs": "^3.2.1",
     "konva": "^8.3.14",
     "mathjax": "^3.2.2"
-  }
+  },
+  "name": "physic",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erfannsb/SMS.git"
+  },
+  "author": "erfannsb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erfannsb/SMS/issues"
+  },
+  "homepage": "https://github.com/erfannsb/SMS#readme",
+  "description": ""
 }
