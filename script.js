@@ -199,10 +199,10 @@ layer.add(v9);
 const reset = document.getElementById("reset");
 var slider = document.getElementById("myRange");
 var output = document.getElementById("posV");
+const m1 = document.getElementById("hmath1");
 var vvalue = document.getElementById("speedV");
 
 output.innerHTML = slider.value;
-
 //circlePath Function:
 
 //constant variables in equation:
@@ -393,27 +393,50 @@ layer.add(circleA);
 stage.add(layer2);
 stage.add(layer);
 
-const howOpenButton = document.getElementById("howopen");
-const howContainer = document.getElementById("howd");
-const howCloseButton = document.getElementById("howclose");
+const infoBtn = document.getElementById("info");
+const infoDiv = document.getElementById("infoDiv");
+const wc = document.getElementById("wholeCanvas");
+let infoBtnState = true;
+infoBtn.addEventListener("click", () => {
+  if (infoBtnState) {
+    startButton.disabled = true;
+    reset.disabled = true;
+    slider.disabled = true;
 
-howOpenButton.addEventListener("click", () => {
-  howContainer.style.display = "block";
-  anime({
-    targets: "#howd",
-    opacity: "1",
-    easing: "easeInOutExpo",
-  });
-});
+    anime({
+      targets: "#wholeCanvas",
+      opacity: 0,
+      duration: 1000,
+    });
+    setTimeout(() => {
+      wc.style.display = "none";
+      infoDiv.style.display = "flex";
+      anime({
+        targets: "#infoDiv",
+        opacity: 1,
+        duration: 2000,
+      });
+    }, 1000);
+    infoBtnState = false;
+  } else {
+    startButton.disabled = false;
+    reset.disabled = false;
+    slider.disabled = false;
 
-howCloseButton.addEventListener("click", () => {
-  anime({
-    targets: "#howd",
-    opacity: "0",
-    easing: "easeInOutExpo",
-    duration: 1000,
-  });
-  setTimeout(() => {
-    howContainer.style.display = "none";
-  }, 1100);
+    anime({
+      targets: "#infoDiv",
+      opacity: 0,
+      duration: 1000,
+    });
+    infoDiv.style.display = "none";
+    setTimeout(() => {
+      wc.style.display = "block";
+      anime({
+        targets: "#wholeCanvas",
+        opacity: 1,
+        duration: 1000,
+      });
+    }, 1000);
+    infoBtnState = true;
+  }
 });
