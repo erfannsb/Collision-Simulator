@@ -94,7 +94,7 @@ html {
   background-color: #8d99ae;
   position: absolute;
   left: -3px;
-  bottom: -2px;
+  bottom: 1px;
   height: 4px;
   width: 515px;
 }
@@ -304,8 +304,10 @@ button {
   height: 100%;
   z-index: 100;
   opacity: 0;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: #f2eee9;
+}
+#infoDiv > div{
+  font-size:17px
 }

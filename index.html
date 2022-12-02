@@ -20,12 +20,20 @@
     <div class="wrapper">
       <div class="secWrapper">
         <div id="infoDiv">
-          <p>$$x_{a} = v_{0}cos\theta t + x_{0}$$</p>
-          <p>$$ y_{a}=-\frac{1}{2}gt^{2}+v_{0}t+y_{0} $$</p>
-          <p>$$y_{b}=-\frac{1}{2}gt^{2}+y_{0}$$</p>
-          <p>$$h=-\frac{1}{2}gt^{2}+y_{0}$$</p>
-          <p>$$t=\sqrt{\frac{-2(h-y_{0})}{g}}$$</p>
-          <p>$$v0 = \frac{x_{a}-x_{0}}{cos\theta t}$$</p>
+          <div>
+            <p>$$y_{Blue}=-\frac{1}{2}gt^{2}+y_{0}$$</p>
+            <p>$$y_{Blue}=h=50$$</p>
+            <p>$$50 = -\frac{1}{2}gt^{2}+y_{0}$$</p>
+            <p>$$50 = -\frac{1}{2}9.8t^{2}+500$$</p>
+            <p>$$t = \sqrt{\frac{450\times 2}{9.8}} \simeq  9.58$$</p>
+          </div>
+          <div>
+            <p>$$x_{Red} = v_{0}cos\theta t + x_{0}$$</p>
+            <p>$$x_{Red} = x_{Blue} = 250$$</p>
+            <p>$$250 = v_{0}cos\theta t + x_{0}$$</p>
+            <p>$$250 = v_{0}\frac{1}{2}(9.58) + 0$$</p>
+            <p>$$v_{0} = \frac{250\times 2}{9.58} \simeq 52.19$$</p>
+          </div>
         </div>
         <div id="wholeCanvas">
           <div id="ds"></div>
@@ -85,7 +93,7 @@
               <img src="./svg/speed.svg" width="40px" alt="speed" />
               <p>Speed</p>
             </div>
-            <p id="speedValue"><span id="speedV">50</span> m/s</p>
+            <p id="speedValue"><span id="speedV">52.19</span> m/s</p>
           </div>
           <div class="angle">
             <div>
